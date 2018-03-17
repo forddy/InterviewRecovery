@@ -1,7 +1,5 @@
 package BrowserManipulation;
 
-import org.openqa.selenium.By;
-
 public class JobLink {
 //    sets up the links from the home page and corresponding titles
 //tech debt - move strings to local variables

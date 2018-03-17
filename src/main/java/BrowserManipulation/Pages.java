@@ -13,4 +13,9 @@ public class Pages {
         JobLink jobLink = new JobLink();
         return new JobLink();
     }
+
+    public static AboutLink aboutLink() {
+        AboutLink aboutLink = new AboutLink();
+        return new AboutLink();
+    }
 }

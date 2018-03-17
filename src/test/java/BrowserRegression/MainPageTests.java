@@ -23,8 +23,14 @@ public class MainPageTests {
         //Pages.homePage().goTo();
         Pages.jobLink().goToJobLink();
         Assert.assertTrue(Pages.jobLink().isAt());
+        }
+
+    @Test
+    //Confirm about link page opens and title correct
+    public void aboutLinkOpens() {
+        Pages.aboutLink().goToAboutLink();
+        Assert.assertTrue(Pages.aboutLink().isAt());
         Browser.close();
     }
-
 
 }

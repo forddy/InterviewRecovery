@@ -15,21 +15,16 @@ public class MainPageTests {
     public void homePageOpens() {
         Pages.homePage().goTo();
         Assert.assertTrue(Pages.homePage().isAt());
-    }
+      }
 
     @Test
-    //click on job link and check title on new job page
+    //Confirm job link page opens and title correct
     public void homePageHasJobLink() {
-        Pages.homePage().goTo();
-        Pages.homePage().goToJobLink();
-
-        //TEST PARTIALLY WORKING - clicks link but need to handle cookie popup / sub frame
-        //Assert.assertTrue(Pages.jobLink().isAt());
+        //Pages.homePage().goTo();
+        Pages.jobLink().goToJobLink();
+        Assert.assertTrue(Pages.jobLink().isAt());
+        Browser.close();
     }
-// fix up below after cookie is handled
-//    @After
-//    public void cleanUp() {
-//        Browser.close();
-//
-//    }
+
+
 }

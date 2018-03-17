@@ -16,8 +16,5 @@ public class HomePage {
 
     }
 
-    public void goToJobLink() {
-        Browser.driver.findElement(By.linkText("find a job")).click();
 
-    }
 }

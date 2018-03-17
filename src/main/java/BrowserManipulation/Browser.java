@@ -20,7 +20,7 @@ public class Browser {
     //close the browser after tests
     public static void close() {
 
-        driver.close();
+        driver.quit();
     }
 }
 

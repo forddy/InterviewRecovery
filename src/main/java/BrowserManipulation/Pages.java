@@ -8,9 +8,9 @@ public class Pages {
         HomePage homePage = new HomePage();
         return new HomePage();
     }
-//
-//    public static JobLink jobLink() {
-//        JobLink jobLink = new JobLink();
-//        return new JobLink();
-//    }
+
+    public static JobLink jobLink() {
+        JobLink jobLink = new JobLink();
+        return new JobLink();
+    }
 }

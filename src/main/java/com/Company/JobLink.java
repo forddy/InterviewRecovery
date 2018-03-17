@@ -12,6 +12,7 @@ public class JobLink {
 
     static private String jobLink = "https://www.randstad.com/find-a-job/";
     static private String jobLinkTitle = "find a job | Randstad Holding";
+    static private String jobResults = "";
 
     public void goToJobLink() {
         Browser.goTo(jobLink);
@@ -26,9 +27,18 @@ public class JobLink {
     public void searchJob() {
         WebElement jobBox = Browser.driver.findElement(By.id("ctl07_ctl05_ctl01_KeywordsTextBox"));
         jobBox.sendKeys("SDET");
+
         WebElement jobClick = Browser.driver.findElement(By.id("ctl07_ctl05_ctl01_SearchButton"));
         jobClick.click();
 
-
+        WebElement jobResult = Browser.driver.findElement(By.id("ctl06_ctl05_NrOfJobsLabelTop"));
+        jobResults = jobResult.getText();
+        System.out.println("********************");
+        System.out.println("");
+        System.out.print("There are ");
+        System.out.print(jobResults);
+        System.out.println(" for SDET at Randstad");
+        System.out.println("");
+        System.out.println("********************");
     }
 }

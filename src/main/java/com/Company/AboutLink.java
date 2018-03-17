@@ -1,4 +1,4 @@
-package BrowserManipulation;
+package com.Company;
 
 public class AboutLink {
 //sets up the links from the home page and corresponding titles

@@ -1,4 +1,4 @@
-package BrowserManipulation;
+package com.Company;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -22,5 +22,6 @@ public class Browser {
 
         driver.quit();
     }
+
 }
 

@@ -1,6 +1,4 @@
-package BrowserManipulation;
-
-import org.openqa.selenium.By;
+package com.Company;
 
 public class HomePage {
 

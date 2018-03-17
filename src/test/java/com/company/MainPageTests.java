@@ -1,10 +1,7 @@
-package BrowserRegression;
+package com.company;
 
-import BrowserManipulation.Browser;
-import BrowserManipulation.HomePage;
-import BrowserManipulation.JobLink;
-import BrowserManipulation.Pages;
-import org.junit.After;
+import com.Company.Browser;
+import com.Company.Pages;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -19,11 +16,22 @@ public class MainPageTests {
 
     @Test
     //Confirm job link page opens and title correct
-    public void homePageHasJobLink() {
+    public void jobLinkOpens() {
         //Pages.homePage().goTo();
         Pages.jobLink().goToJobLink();
         Assert.assertTrue(Pages.jobLink().isAt());
         }
+
+    @Test
+    //Search for an awesome job
+    public void searchJob() {
+      //Pages.homePage().goTo()
+        Pages.jobLink().goToJobLink();
+        Pages.jobLink().searchJob();
+
+    }
+
+
 
     @Test
     //Confirm about link page opens and title correct

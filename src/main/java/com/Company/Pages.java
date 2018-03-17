@@ -1,4 +1,4 @@
-package BrowserManipulation;
+package com.Company;
 
 public class Pages {
 

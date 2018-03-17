@@ -1,4 +1,8 @@
-package BrowserManipulation;
+package com.Company;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+
 
 public class JobLink {
 //    sets up the links from the home page and corresponding titles
@@ -19,4 +23,12 @@ public class JobLink {
 
     }
 
+    public void searchJob() {
+        WebElement jobBox = Browser.driver.findElement(By.id("ctl07_ctl05_ctl01_KeywordsTextBox"));
+        jobBox.sendKeys("SDET");
+        WebElement jobClick = Browser.driver.findElement(By.id("ctl07_ctl05_ctl01_SearchButton"));
+        jobClick.click();
+
+
+    }
 }

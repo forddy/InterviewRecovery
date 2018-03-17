@@ -5,16 +5,16 @@ public class aboutLink {
 //tech debt - move strings to local variables
 //tech debt - reduce duplication
 //tech debt - replace with link from home not URL
-    static private String aboutPath = "https://www.randstad.com/about-randstad";
-    static private String aboutPathTitle = "about Randstad | Randstad Holding";
+    static private String aboutLink = "https://www.randstad.com/about-randstad";
+    static private String aboutLinkTitle = "about Randstad | Randstad Holding";
 
     //getter for about path link
     public void goTo() {
-        Browser.goTo(aboutPath);
+        Browser.goTo(aboutLink);
         }
 
         public boolean isAt() {
-            return Browser.title().equals(aboutPathTitle);
+            return Browser.title().equals(aboutLinkTitle);
         }
 
 

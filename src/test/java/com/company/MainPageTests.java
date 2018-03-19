@@ -3,6 +3,7 @@ package com.company;
 import com.Company.Browser;
 import com.Company.Pages;
 import org.junit.After;
+import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -36,17 +37,13 @@ public class MainPageTests {
         Pages.homePage().goTo();
         Pages.aboutLink().goToAboutLink();
         Assert.assertTrue(Pages.aboutLink().isAt());
+
         }
-/*
 
-not working - browser session left open after tests
-need to either instantiate each session separately and close each time or fix this
 
-@After
-
-public void cleanup() {
+@AfterClass
+public static void cleanup() {
 Browser.close();
-
 }
-*/
+
 }

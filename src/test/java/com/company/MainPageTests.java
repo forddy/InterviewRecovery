@@ -2,7 +2,6 @@ package com.company;
 
 import com.Company.Browser;
 import com.Company.Pages;
-import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.Test;
@@ -33,6 +32,7 @@ public class MainPageTests {
 
     @Test
     //Confirm about link page opens and title correct
+
     public void aboutLinkOpens() {
         Pages.homePage().goTo();
         Pages.aboutLink().goToAboutLink();
